@@ -1,0 +1,21 @@
+# Core ML / NLP
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4
+
+# Plotting (evaluation artifacts)
+matplotlib>=3.9
+seaborn>=0.13
+
+# Experiment tracking
+mlflow>=3.0
+
+# Orchestration. Install WITH the official constraints file for reproducibility
+# (see README - Installation):
+#   pip install "apache-airflow==3.3.2" --constraint \
+#     "https://raw.githubusercontent.com/apache/airflow/constraints-3.3.2/constraints-3.12.txt"
+apache-airflow==3.3.2
+
+# Testing
+pytest>=8.0

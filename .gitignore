@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Airflow local state (AIRFLOW_HOME lives in WSL home; these guard accidents)
+airflow.db
+airflow.cfg
+logs/
+standalone_admin_password.txt
+
+# MLflow runs (generated)
+mlruns/*
+!mlruns/.gitkeep
+mlflow.db
+
+# Downloaded dataset (reproducible via src/data_loader.py)
+data/raw/
+
+# Generated pipeline artifacts (reproducible via the pipeline)
+artifacts/*
+!artifacts/.gitkeep
+models/*
+!models/.gitkeep
+
+# Secrets / env
+.env
+
+# OS
+Thumbs.db
+
+# Pre-existing portable Node.js install (not part of this project)
+node_modules/
+node.exe
+nodevars.bat
+npm
+npm.cmd
+npm.ps1
+npx
+npx.cmd
+npx.ps1
+corepack
+corepack.cmd
+install_tools.bat
